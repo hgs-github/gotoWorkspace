@@ -33,9 +33,9 @@ function numberFilter() {
 	r=${v//[0-9]/}
 
 	if [ -z "$r" ]; then
-	    echo true
+		echo true
 	else
-	    echo false
+		echo false
 	fi
 }
 
