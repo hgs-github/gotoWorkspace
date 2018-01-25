@@ -105,9 +105,9 @@ function installCompleteMessage() {
 }
 ##############################기능구현
 
+# .bachrc에 추가할 소스가 등록돼 있는지 중복 검사
 # .profile에 alias 중복 검사,
 #   현제 디렉토리로 된 run.sh 파일이 등록돼 있는지 중복 검사
-#
 
 
 function setInput() {
