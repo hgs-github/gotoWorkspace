@@ -1,5 +1,5 @@
 #!/bin/bash
-thisPath=$(dirname $(echo $BASH_SOURCE))
+thisPath=$(dirname $(echo $BASH_SOURCE)) #by F
 userHomePath="/home/$USER"
 
 bachrc="$userHomePath/.bashrc"
@@ -236,7 +236,6 @@ function main() {
 	if [ $isInstallFile == "run.sh" ]; then
 		installStartMessage
 
-#		read -p "입력: " installType
 
 		installType=`setInput 1`
 
