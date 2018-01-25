@@ -63,11 +63,11 @@ function showList() {
 	    if [ $# == 0 ]; then
 		    echo $num. $elem
 	    else
-	      if [ $elem == $1 ] && [ -n $1 ]; then
-					echo $num. $elem "<---"
-				else
-					echo $num. $elem
-				fi
+		if [ $elem == $1 ] && [ -n $1 ]; then
+			echo $num. $elem "<---"
+		else
+			echo $num. $elem
+		fi
 	    fi
 	  done
 	fi
