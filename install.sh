@@ -265,7 +265,7 @@ function main() {
 			source $profile
 
 			echo "
-			끝
+			끝.
 			"
 
 
