@@ -28,7 +28,7 @@
 # 2.설치안내
 
 
-###2.1) install.sh 설치
+### 2.1) install.sh 설치
 	1. 다운로드 받은 파일이 있는 곳에서 source install.sh 를 입력합니다.
 	2. 설치 안내에 따라서 진행합니다.
 	3. 설치 종료 메시지가 나오면 다음과 같은 명령어를 쉘에 입력합니다.
@@ -44,38 +44,38 @@
 
 		
 
-###2.2) 수동설치
-#####(1) .bachrc 파일에 내용추가	
+### 2.2) 수동설치
+##### (1) .bachrc 파일에 내용추가	
 
 	~/.bachrc 파일 하단에 아래의 해당하는 내용을 입력하세요
 	source /gotoWorksapce디렉토리 경로/run.sh root
 	예)
 		source /home/user/gotoWorksapce/run.sh root
 	
-#####(2) .profile 파일에 내용추가
+##### (2) .profile 파일에 내용추가
 
 	~/.profile 파일 하단에 아래의 해당하는 내용을 입력하세요
 	alias 별명="source /gotoWorksapce디렉토리 경로/run.sh"
 	예)
 		alias goto="source /home/user/gotoWorksapce/run.sh"			 
 
-#####(3) .bachrc .profile의 변경된 사항 시스템에 적용하기
+##### (3) .bachrc .profile의 변경된 사항 시스템에 적용하기
 	source ~/.bachrc
 	(엔터)
 	source ~/.profile
 	(엔터)
 	 
-#3. 사용법
+# 3. 사용법
 
 	이 프로그램의 최대 인자값은 4개이며
 	크게 list, select, root, -help 등의 명령어로 이루어졌습니다.
 	
 
 
-##3.1) list
+## 3.1) list
 	list 옵션은 show, add, edit, del 가 있습니다.
 	
-* ###show
+* ### show
 >	* list에 등록된 주소를 보여줍니다.
   
 	ex)
@@ -97,7 +97,7 @@
 
 
 
-* ###add
+* ### add
 >	* list에 원하는 path를 추가합니다.
 
 	ex)
@@ -115,7 +115,7 @@
 	4. /etc/nginx <--- 
 
 
->* #####add의 옵션
+>* ##### add의 옵션
 > * pwd [ this ] 
 >   1. 현제 위치한 주소를 추가할 때 사용합니다.
 >   2. pwd 키워드 대신 this로도 사용할 수 있습니다.
@@ -128,7 +128,7 @@
 	goto list add this
 			
 			
-* ###edit
+* ### edit
 > * list에 원하는 번호의 값을 수정합니다.
 
 	ex)
@@ -149,7 +149,7 @@
 	4. /etc/nginx
 
 
-* ###del
+* ### del
 > * list의 원하는 번호의 값을 제거합니다.
 
 	ex)
@@ -167,7 +167,7 @@
 	3. /etc/nginx
 
 
-* #####del의 옵션
+* ##### del의 옵션
 > * -all [ -a ]
 >   1. list에 있는 모든 리스트들을 삭제합니다.
 >   2. -all 대신 -a 를 옵션으로 사용해도 작동합니다.
@@ -190,11 +190,11 @@
 
 
 
-##3.2) select [ sel ]
+## 3.2) select [ sel ]
 	select의 옵션은 show, update 가 있습니다.
 	그리고 select는 sel로도 불러올 수 있습니다.
 	
-* ###show
+* ### show
 > * select에 등록된 값을   
 >		list에 출력하여 표시하며 보여줍니다.  
 >		select 인자값에 아무것도 주지 않아도 실행됩니다.  
@@ -217,7 +217,7 @@
 	3. /etc
 
 
-* ###update [ up ]
+* ### update [ up ]
 > * select
 >   1. select에 값을 업데이트 시킵니다.
 >   2. 인자 값으론 list에 등록된 번호를 사용합니다.
@@ -241,7 +241,7 @@
 	3. /etc
 
 			
-##3.3) root [ r, 0 ]
+## 3.3) root [ r, 0 ]
 > * select에 update 된 값으로 바로 이동합니다.
 
 	ex)
