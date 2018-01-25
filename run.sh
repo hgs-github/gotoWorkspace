@@ -15,7 +15,7 @@
 
 ##############################전역변수
 
-path=$(dirname $(echo $BASH_SOURCE))
+path=$(dirname $(echo $BASH_SOURCE)) # by F
 
 list=$path/list
 
