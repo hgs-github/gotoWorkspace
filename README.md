@@ -262,5 +262,5 @@
 	version    : gotoWorkspace v0.1.3
 	developer  : TheName
 	github     : https://github.com/hgs-github/gotoWorkspace
-	thanks     : F, 엄청못합니다봐주십쇼제발부탁트립니다제발
+	thanks     : F(진지), dhtmdgkr123(Matas)[엄청]
 	
